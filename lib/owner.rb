@@ -34,7 +34,7 @@ class Owner
   end
   
   def cats
-    Cat.each{|owner| owner}
+    Cat.all.each{|owner| owner}
   end
   
 end
