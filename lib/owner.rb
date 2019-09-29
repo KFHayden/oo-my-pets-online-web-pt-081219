@@ -10,7 +10,6 @@ class Owner
     @name = name
     @@all << self
     @@count += 1
-    @cats = Cat.all
   end
   
   def species
@@ -34,12 +33,8 @@ class Owner
     @@count = 0
   end
   
-  def buy_cat(name)
-    cat = Cat.new(name)
-    @pets[:cats] << cat
-  end
-  
-  def buy_dog(name)
+  def cats
+    Cat.each{|owner| owner}
   end
   
 end
