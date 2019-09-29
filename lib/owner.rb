@@ -54,9 +54,7 @@ class Owner
   end
   
   def walk_dogs
-    if self.walk_dogs
-      @mood = "happy"
-    end
+    @mood = "happy"
   end
   
 end
